@@ -41,4 +41,4 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 7
     m_NumAlphaKeys: 4
-  PlanetMaterial: {fileID: 2100000, guid: 05ab2776c95ad2d4eac5dd60e20a1b22, type: 2}
+  PlanetMaterial: {fileID: 2100000, guid: 6f57fa36a254c5c468e603248c0d42d6, type: 2}
