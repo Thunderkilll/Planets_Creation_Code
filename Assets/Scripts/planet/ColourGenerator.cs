@@ -15,7 +15,7 @@ public class ColourGenerator
         this.settings = settings;
         if (texture == null || texture.height != settings.biomeColourSettings.biomes.Length)
         {
-            texture = new Texture2D(textureResolution, settings.biomeColourSettings.biomes.Length);
+            texture = new Texture2D(textureResolution, settings.biomeColourSettings.biomes.Length , TextureFormat.ARGB32 , false);
         }
 
         filter = NoiseFilterFactory.CreateNoiseFilter(settings.biomeColourSettings.noiseSettings);
@@ -43,7 +43,7 @@ public class ColourGenerator
 
     public void UpdateElevation(MinMax elevationMinMax)
     {
-        settings.PlanetMaterial.SetVector("_elevationMinMax",new  Vector4(elevationMinMax.Min, elevationMinMax.Max));
+        settings.PlanetMaterial.SetVector("_elevationMinMax", new  Vector4(elevationMinMax.Min, elevationMinMax.Max));
     }
     public void UpdateColors()
     {
