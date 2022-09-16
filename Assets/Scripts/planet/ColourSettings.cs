@@ -8,7 +8,7 @@ public class ColourSettings : ScriptableObject
     public Material PlanetMaterial;
     public BiomeColourSettings biomeColourSettings;
     public class BiomeColourSettings {
-        public Biome[] Biomes;
+        public Biome[] biomes;
         public class Biome {
             public Gradient gradiant;
             public Color tint;
