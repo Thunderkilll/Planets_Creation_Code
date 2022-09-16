@@ -4,11 +4,20 @@ using UnityEngine;
 
 [CreateAssetMenu()]
 public class ColourSettings : ScriptableObject
-{
-
-    public Gradient gradiant;
+{ 
     public Material PlanetMaterial;
-
+    public BiomeColourSettings biomeColourSettings;
+    public class BiomeColourSettings {
+        public Biome[] Biomes;
+        public class Biome {
+            public Gradient gradiant;
+            public Color tint;
+            [Range(0f, 1f)]
+            public float startHight;
+            [Range(0f, 1f)]
+            public float tintPercent;
+        }
+    }
     /*
     
     ShapeSettings settings;
