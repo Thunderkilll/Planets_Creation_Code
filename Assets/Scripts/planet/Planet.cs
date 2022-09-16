@@ -24,10 +24,13 @@ public class Planet : MonoBehaviour
     //planet generator
     ShapeGenerator shapeGenerator = new ShapeGenerator();
     ColourGenerator colorGenerator = new ColourGenerator();
+
     void Initialize()
     {
         shapeGenerator.UpdateSettings(shapeSettings);
+
         colorGenerator.UpdateSettings(colourSettings);
+
         if (meshFilters == null || meshFilters.Length == 0)
         {
             meshFilters = new MeshFilter[6];
@@ -96,6 +99,13 @@ public class Planet : MonoBehaviour
     void GenerateColours()
     {
         colorGenerator.UpdateColors();
+        for (int i = 0; i < 6; i++)
+        {
+            if (meshFilters[i].gameObject.activeSelf)
+            {
+                terrainFaces[i].UpdateUVs(colorGenerator);
+            }
+        }
     }
 }
 

@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dd6b56bca64394898e118718d37a21, type: 3}
   m_Name: Shape
   m_EditorClassIdentifier: 
-  planetRadius: 199.91
+  planetRadius: 2.73
   noiseLayers:
-  - enable: 0
-    isFirstLayerAsMask: 1
+  - enable: 1
+    isFirstLayerAsMask: 0
     noiseSettings:
       filterType: 0
       simpleNoiseSettings:
         numLayers: 4
-        strength: 0.14
-        baseRoughness: 0.8
-        roughness: 2.21
+        strength: 0.07
+        baseRoughness: 1.07
+        roughness: 2.2
         persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
+        centre: {x: 1.11, y: 0.92, z: -0.39}
         minValue: 0.98
       rigidNoiseSettings:
         numLayers: 1
@@ -38,63 +38,21 @@ MonoBehaviour:
   - enable: 1
     isFirstLayerAsMask: 1
     noiseSettings:
-      filterType: 0
+      filterType: 1
       simpleNoiseSettings:
-        numLayers: 4
-        strength: 3.19
-        baseRoughness: 1.96
-        roughness: 2.86
+        numLayers: 5
+        strength: 5.67
+        baseRoughness: 1.08
+        roughness: 2.34
         persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
+        centre: {x: 0, y: 0, z: 4.6}
         minValue: 1.72
       rigidNoiseSettings:
-        numLayers: 1
-        strength: 1
-        baseRoughness: 1
-        roughness: 2
-        persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-        weightMultiplier: 0.8
-  - enable: 1
-    isFirstLayerAsMask: 1
-    noiseSettings:
-      filterType: 1
-      simpleNoiseSettings:
-        numLayers: 1
-        strength: 0.2
-        baseRoughness: 1.2
-        roughness: 2.34
-        persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-      rigidNoiseSettings:
-        numLayers: 1
-        strength: 5.59
-        baseRoughness: 1.98
-        roughness: 3.68
-        persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-        weightMultiplier: 0.58
-  - enable: 1
-    isFirstLayerAsMask: 1
-    noiseSettings:
-      filterType: 1
-      simpleNoiseSettings:
-        numLayers: 1
-        strength: 0.2
-        baseRoughness: 1.2
-        roughness: 2.34
-        persistance: 0.5
-        centre: {x: 0, y: 0, z: 0}
-        minValue: 0
-      rigidNoiseSettings:
         numLayers: 4
-        strength: -0.22
-        baseRoughness: 6.27
-        roughness: 7.57
-        persistance: 4.37
+        strength: 1.42
+        baseRoughness: 1.59
+        roughness: 3.3
+        persistance: 0.5
         centre: {x: 0, y: 0, z: 0}
-        minValue: 0.54
-        weightMultiplier: 1
+        minValue: 0.37
+        weightMultiplier: 0.78
